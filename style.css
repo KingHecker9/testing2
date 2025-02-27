@@ -11,6 +11,7 @@
 }
 .nav h1{
     margin-left: 10%;
+    cursor: pointer;
 }
 .nav ul{
     display: flex;
@@ -20,13 +21,69 @@
     padding: 15px;
     letter-spacing: 2px;
     font-size: smaller;
+    cursor: pointer;
 }
 .nav p{
-    margin-right: 15%;
+    margin-right: 5%; 
+    font-size:  22px;
+    cursor: pointer;
+    gap: 25px;
+}
+#bars{
+    margin-right: 5px;
+    display: none;
+
 }
 
+
+
+
+:root{
+    --font-sm: 0.875rem;
+    --font-md: 1rem;
+    --font-lg: 1.25rem;
+    --font-xl: 1.75rem;
+    --font-2xl: 2.5rem;
+    --font-3xl: 4rem;
+}
+body{
+    font-size: var(--font-md);    
+}
+h1{
+    font-size: var(--font-2xl);
+}
+p{
+    font-size: var(--font-lg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px){
+    .nav{
+        justify-content: space-between;
+    }
+    .nav ul{
+        display: none;
+    }
+    .nav p{
+        margin-right: 5%;
+        display: flex;
+    }
+    #bars{display: block;}
+}   
 .cm{
-    background-image: url(pics/mugbackground.jfif);
+    background-image: url(pics/mugbackground1.jpg);
     color: white;
     height: 450px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -49,26 +106,55 @@
 }
 
 .bcm{
-    width: 700px;
-    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     text-align: center;
+}
+.bcm-text{
+    width: 60%;
 }
 #read{
     color: darkgoldenrod;
     margin: 60px;
 }
+@media (max-width: 768px){
+    .bcm{
+        width: auto;
+    }
+    .child{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .child1{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}
 
 .child{
     display: flex;
+    /* width: 50%; */
     font-family: sans-serif;
-    gap: 2%;
+    /* gap: 2%; */
     text-align: center;
     justify-content: center;
 }
-#pink p{
-    color: dimgrey;
+.child img{
+    /* padding-right: 50px;
+    padding-left: 50px; */
+    width: 90%;
 }
-#cocoa div{
+.pink{
+    
+}
+.pink p{
+    color: dimgray;
+}
+
+.pink div{
     display: flex;
     gap: 25px;
     justify-content: center;
@@ -91,6 +177,9 @@
     text-align: center;
     font-family: sans-serif;
 }
+.red img{
+    width: 370px;    
+}
 .red div{
     display: flex;
     gap: 25px;
@@ -104,11 +193,18 @@
     text-decoration: line-through;
     color: dimgray;
 }
+.black img{
+    width: 370px;
+}
 .black div{
     display: flex;
     gap: 25px;
     justify-content: center;
     text-align: center;
+}
+
+.black1 img{
+    width: 370px;
 }
 .up{
     color: dimgray;
@@ -152,15 +248,46 @@
 .kid1 div{
     display: block;
 }
-#image{
-    padding-top: 5%;
+.kid1 div img{
+    width: 200px;
+}
+.image{
+    padding-top: 20px;
+}
+.ima{
+    width: 290px;
+}
+@media (max-width: 768px){
+    .mother{
+        flex-direction: column-reverse;
+    }
+    .kid{
+        text-align: center;
+    }
+    .kid1 div{
+        display: flex;
+        gap: 10px;
+    }
+    .kid1{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .ima{
+        width: 400px;
+    }
+    
+    .mom{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .background{
     width: 100%;
-    height: 500px;
+    height: 100%;
     background-color: black;
-    background-image: url(pics/mugbackground.jfif);
+    background-image: url(pics/5be96251aaba7ac1c6ecdfd2_Section\ Image\ 2.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -192,9 +319,15 @@
 .kidd h1{
     color:  rgb(5, 5, 53);
 }
+.kidd img{
+    width: 370px;
+}
 .kidd1 p{
     color: dimgray;
     line-height: 29px;
+}
+.kidd1 img{
+    width: 370px;
 }
 .kidd2 h1{
     color:  rgb(5, 5, 53);
@@ -203,9 +336,24 @@
     color: dimgray;
     line-height: 29px;
 }
-
+.kidd2 img{
+    width: 370px;
+}
+@media (max-width: 768px)   {
+    .af div{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .af button{
+        padding: 20px 30px;
+        width: 370px;
+        
+    }
+}
 .af{
-    background-image: url(pics/mugbackground.jfif);
+    background-image: url(pics/mugbackground1.jpg);
     color: white;
     justify-content: center;
     height: 300px;
@@ -215,6 +363,10 @@
     background-size: 2300px;
     background-repeat: no-repeat;
     text-align: center;
+}
+.af div{
+    display: flex;
+    justify-content: center;
 }
 .af p{
     font-size: smaller;
@@ -227,6 +379,9 @@
 .af button{
     padding: 15px 20px;
     letter-spacing: 1px;
+}
+.af button a{
+    text-decoration: none;
     color:  rgb(5, 5, 53);
 }
 .af input{
@@ -239,7 +394,22 @@
 .af input:hover{
     border: 1px solid white;
 }
+@media (max-width: 768px){
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+    }    
 
+    form input{
+        width: 100px;
+        height: 45px;
+        border-radius: 4px;
+        text-align: center;
+        margin-right: 10%;
+        outline: none;
+        border: none;
+    }
+}
 .footer{
     margin-top: 150px;
     width: 100%;
@@ -270,10 +440,11 @@ form input{
     height: 45px;
     border-radius: 4px;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
     outline: none;
     border: none;
+}
+form input:hover{
+    border: 1px solid black;
 }
 form button{
     background: transparent;
@@ -283,7 +454,8 @@ form button{
     padding: 10px 30px;
     font-size: 15px;
     cursor: pointer;
-}
+    margin-top: 5%;
+} 
 .social-icons{
     margin-top: 30px;
 }
