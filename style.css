@@ -147,9 +147,7 @@ p{
     padding-left: 50px; */
     width: 90%;
 }
-.pink{
-    
-}
+
 .pink p{
     color: dimgray;
 }
@@ -178,7 +176,7 @@ p{
     font-family: sans-serif;
 }
 .red img{
-    width: 370px;    
+    width: 270px;    
 }
 .red div{
     display: flex;
@@ -194,7 +192,7 @@ p{
     color: dimgray;
 }
 .black img{
-    width: 370px;
+    width: 270px;
 }
 .black div{
     display: flex;
@@ -204,7 +202,7 @@ p{
 }
 
 .black1 img{
-    width: 370px;
+    width: 270px;
 }
 .up{
     color: dimgray;
@@ -320,14 +318,14 @@ p{
     color:  rgb(5, 5, 53);
 }
 .kidd img{
-    width: 370px;
+    width: 270px;
 }
 .kidd1 p{
     color: dimgray;
     line-height: 29px;
 }
 .kidd1 img{
-    width: 370px;
+    width: 270px;
 }
 .kidd2 h1{
     color:  rgb(5, 5, 53);
@@ -337,7 +335,7 @@ p{
     line-height: 29px;
 }
 .kidd2 img{
-    width: 370px;
+    width: 270px;
 }
 @media (max-width: 768px)   {
     .af div{
@@ -348,8 +346,11 @@ p{
     }
     .af button{
         padding: 20px 30px;
-        width: 370px;
+        width: 100%;
         
+    }
+    .af input{
+        width: 100%;
     }
 }
 .af{
@@ -367,6 +368,7 @@ p{
 .af div{
     display: flex;
     justify-content: center;
+    gap: 10px;
 }
 .af p{
     font-size: smaller;
@@ -423,6 +425,8 @@ p{
 }
 .col-2{
     flex-grow: 2;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .footer div h3{
     font-weight: 300;
@@ -436,7 +440,7 @@ p{
     margin-bottom: 10px;
 }
 form input{
-    width: 400px;
+    width: 100%;
     height: 45px;
     border-radius: 4px;
     text-align: center;
