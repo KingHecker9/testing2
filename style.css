@@ -250,15 +250,16 @@
 }
 .kid1 div{
     display: block;
+    gap: 10%;
 }
 .kid1 div img{
-    width: 44%;
+    width: 180px;
 }
 .image{
     /* padding-top: 20px; */
 }
 .ima{
-    width: 90%;
+    width: 300px;
 }
 @media (max-width: 768px){
     .mother{
@@ -271,12 +272,16 @@
         display: flex;
         gap: 10px;
     }
+    .kid1 div img{
+        width: 44%;
+
+    }
     .kid1{
         flex-direction: column;
         gap: 20px;
     }
     .ima{
-        /* width: 400px; */
+        
     }
     
     .mom{
@@ -351,11 +356,11 @@
     }
     .af button{
         padding: 20px 30px;
-        width: 100%;
+        width: 80%;
         
     }
     .af input{
-        width: 100%;
+        width: 80%;
     }
 }
 .af{
@@ -394,7 +399,7 @@
 }
 .af input{
     padding: 20px 30px;
-    width: 370px;
+    width: 50%;
     border: 1px solid dimgray;
     background: transparent;
     color: white;
