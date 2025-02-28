@@ -115,17 +115,9 @@
         flex-direction: column;
         justify-content: center;
         text-align: center;
-    
-    
+        margin: auto;    
         display: flex;
-        /* width: 50%; */
         font-family: sans-serif;
-        /* gap: 2%; */
-        text-align: center;
-        justify-content: center;
-    
-        /* padding-right: 50px;
-        padding-left: 50px; */
         width: 90%;
     }
 }
@@ -176,10 +168,7 @@
 .child1 img{
     width: 90%;
 }
-.red img{
-    
-    
-}
+
 .red div{
     display: flex;
     gap: 25px;
@@ -193,10 +182,7 @@
     text-decoration: line-through;
     color: dimgray;
 }
-.black img{
-    
-    
-}
+
 .black div{
     display: flex;
     gap: 25px;
@@ -204,10 +190,7 @@
     text-align: center;
 }
 
-.black1 img{
-    
-    
-}
+
 .up{
     color: dimgray;
     margin-top: 35px;
@@ -255,9 +238,7 @@
 .kid1 div img{
     width: 180px;
 }
-.image{
-    /* padding-top: 20px; */
-}
+
 .ima{
     width: 300px;
 }
@@ -280,9 +261,7 @@
         flex-direction: column;
         gap: 20px;
     }
-    .ima{
-        
-    }
+   
     
     .mom{
         flex-direction: column;
@@ -361,6 +340,7 @@
     }
     .af input{
         width: 50%;
+        padding: 10px 15px;
     }
 }
 .af{
