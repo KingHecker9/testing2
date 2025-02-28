@@ -38,23 +38,6 @@
 
 
 
-:root{
-    --font-sm: 0.875rem;
-    --font-md: 1rem;
-    --font-lg: 1.25rem;
-    --font-xl: 1.75rem;
-    --font-2xl: 2.5rem;
-    --font-3xl: 4rem;
-}
-body{
-    font-size: var(--font-md);    
-}
-h1{
-    font-size: var(--font-2xl);
-}
-p{
-    font-size: var(--font-lg);
-}
 
 
 
@@ -70,6 +53,7 @@ p{
 
 
 @media (max-width: 768px){
+   
     .nav{
         justify-content: space-between;
     }
@@ -131,6 +115,18 @@ p{
         flex-direction: column;
         justify-content: center;
         text-align: center;
+    
+    
+        display: flex;
+        /* width: 50%; */
+        font-family: sans-serif;
+        /* gap: 2%; */
+        text-align: center;
+        justify-content: center;
+    
+        /* padding-right: 50px;
+        padding-left: 50px; */
+        width: 90%;
     }
 }
 
@@ -169,14 +165,20 @@ p{
 
 .child1{
     display: flex;
+    /* width: 50%; */
     gap: 15px;
     margin-top: 12%;
     justify-content: center;
     text-align: center;
+    /* width: 90%; */
     font-family: sans-serif;
 }
+.child1 img{
+    width: 90%;
+}
 .red img{
-    width: 270px;    
+    
+    
 }
 .red div{
     display: flex;
@@ -192,7 +194,8 @@ p{
     color: dimgray;
 }
 .black img{
-    width: 270px;
+    
+    
 }
 .black div{
     display: flex;
@@ -202,7 +205,8 @@ p{
 }
 
 .black1 img{
-    width: 270px;
+    
+    
 }
 .up{
     color: dimgray;
@@ -226,6 +230,7 @@ p{
 }
 .kid{
     padding-right: 5%;
+    width: 100%;
     font-family: sans-serif;
 }
 .kid p{
@@ -247,13 +252,13 @@ p{
     display: block;
 }
 .kid1 div img{
-    width: 200px;
+    width: 44%;
 }
 .image{
-    padding-top: 20px;
+    /* padding-top: 20px; */
 }
 .ima{
-    width: 290px;
+    width: 90%;
 }
 @media (max-width: 768px){
     .mother{
@@ -271,7 +276,7 @@ p{
         gap: 20px;
     }
     .ima{
-        width: 400px;
+        /* width: 400px; */
     }
     
     .mom{
@@ -286,7 +291,7 @@ p{
     height: 100%;
     background-color: black;
     background-image: url(pics/5be96251aaba7ac1c6ecdfd2_Section\ Image\ 2.jpg);
-    background-size: 100%;
+    background-size: 50%;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -356,6 +361,7 @@ p{
 .af{
     background-image: url(pics/mugbackground1.jpg);
     color: white;
+    /* width: 100%; */
     justify-content: center;
     height: 300px;
     font-family: sans-serif;
